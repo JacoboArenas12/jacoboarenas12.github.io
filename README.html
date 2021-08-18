@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Ajedrez</title>
+    <link rel="stylesheet" href="Ajedrez6.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <h1 id="Titulocentral" class="Importante">El Ajedrez</h1>
+    </header>
+    <section id="Uno">
+        <h2 id="Indice" class="Subtitulos Importante">Indice</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th><b>El Ajedrez</b></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> <a href="#Queeselajedrez">¿Qué es el ajedrez?</a></td>
+                </tr>
+                <tr>
+                    <td> <a href="#Comojugaralajedrez">¿Cómo jugar al ajedrez?</a> </td>
+                </tr>
+                <tr>
+                    <td> <a href="#Movimientodelaspiezas">Movimiento de las piezas.</a></td>
+                </tr>
+                <tr>
+                    <td> <a href="#Movimientosespeciales">Movimientos especiales.</a> </td>
+                </tr>
+                <tr>
+                    <td> <a href="#Conceptos">Conceptos basicos del ajedrez.</a> </td>
+                </tr>
+                <tr>
+                    <td> <a href="#Reglasdelajedrez">Las reglas del ajedrez </a> </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <br>
+    <section id="Dos">
+        <h2 id ="Queeselajedrez" class="Subtitulos Importante">¿Qué es el Ajedrez? </h2>
+        <p>El Ajedrez, considerado un deporte, es un juego para 2 jugadores que consiste en una simulación 
+        de una batalla entre 2 bandos, el blanco y el negro, cada jugador toma un bando y usara las 16 piezas
+        que dispone al principio del juego para ganar la batalla, el cual se logra cuando la captura del rey 
+        (pieza del ajedrez) rival es inevitable.
+        </p>
+        <img width="355" height="357" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Chess_board_with_chess_set_in_opening_position_2012_PD_03.jpg/1200px-Chess_board_with_chess_set_in_opening_position_2012_PD_03.jpg" alt="Ajedrez" id="tablero1">
+    </section>
+    <br>
+    <section id="Tres">
+        <h2 id="Comojugaralajedrez" class="Subtitulos Importante">¿Como Jugar al Ajedrez?</h2>
+        <p>Para jugar al ajedrez se necesita 1 tablero divido en 64 casillas con 32 blancas y 32 negras 
+            (generalmente los colores son blanco y negro, aunque pueden usarse otros sin problema), con el 
+            siguiente patron:</p>
+        <img width="" height="" src= "https://images-na.ssl-images-amazon.com/images/I/51r2%2BueTskL._AC_SX355_.jpg" alt="patron del tablero" id="tablero2">
+        <p>Cabe aclarar que para poner el tablero de forma correcta se debe verificar que en la parte que vayamos a jugar siempre haya en la ultima
+            casilla de la derecha una casilla blanca, si no es asi debemos ajustar el tablero para que esta condicion sea valida, esta regla
+            no varia si somos blancas o negras.
+        </p>
+        <p>Asi como también las piezas que compondran nuestro "ejercito", las piezas son:</p>
+        <ul>
+            <b>
+            <li>El peon (Son 8 peones por jugador.)</li>
+            <li>El caballo (Son 2 caballos por jugador).</li>
+            <li>El alfil (Son 2 alfiles por jugador).</li>
+            <li>La torre (Son 2 torres por jugador).</li>
+            <li>La dama (Es una dama por jugador).</li>
+            <li>El Rey (Es un rey por jugador).</li>
+            </b>
+        </ul>
+        <p id="Posicioninicialdelaspiezas">Cada jugador tendra estas 16 piezas que estaran pintadas de un color según el bando que 
+        escoja (Blancas o Negras). Es importante que las piezas de cada tipo sean identicas entre ellas y
+        diferentes a las demás.</p>
+        <p>Las piezas se disponen de la siguiente manera:</p>
+        <ul>
+        <li><b>Peones:</b> Los 8 peones ocuparan la 2 o 7 fila del tablero (si somos blancas iran en
+        2 y si somos negras en 7).</li>
+        <li><b>Caballos:</b> Los caballos iran en la casilla b1 (mirar imagen de arriba) y g1, si somos 
+        negras es a la inversa, es decir b8 y g8.</li>
+        <li><b>Alfiles:</b> Los alfiles iran en la casilla c1 y f1, si somos negras es a la inversa,es decir
+        c8 y f8.</li>
+        <li><b>Torres:</b> Las torres iran en la casilla a1 y h1, si somos negras es a la inversa, es decir 
+        a8 y h8.</li>
+        <li><b>Dama:</b> La dama ira en la casillda d1, si somos negras es a la inversa, es decir d8.</li>
+        <li><b>Rey:</b> El rey ira en la casilla e1, si somos negras es a la inversa, es decir e8.</li>
+        </ul>
+        <p>El resultado debe ser igual a como se encuentran las piezas de la primera imagen.</p>
+        <p>Una vez tenemos las piezas y el tablero ubicados de manera correcta podemos jugar, no sin antes 
+        recordando las reglas basicas del ajedrez.</p>    
+    </section>
+    <section id="Cuatro">
+        <h2 id="Movimientodelaspiezas" class="Subtitulos Importante">Movimiento de las Piezas</h2>
+        <p>Para poder jugar correctamente al ajedrez debemos conocer el movimiento de las piezas, pues 
+        si no lo hacemos podemos hacer jugadas "ilegales" (que rompen las reglas del juego) lo que podria llevar 
+        a que perdamos la partida. Aqui una tabla donde se explica el movimiento de cada una de las piezas (Youtube).</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Pieza</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="https://www.youtube.com/watch?v=z8_HX2wcMVc" target="blank">Rey</a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.youtube.com/watch?v=oW0jA1zb56A" target="blank">Dama</a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.youtube.com/watch?v=H0VYvavOWGE" target="blank">Torre</a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.youtube.com/watch?v=mC3ZrPS5AEo" target="blank">Alfil</a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.youtube.com/watch?v=yfUK0g6o488" target="blank">Caballo</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.youtube.com/watch?v=Mpn9cL9C16A" target="blank">Peon</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <br>
+    <section id="Cinco">
+        <h2 id="Movimientosespeciales" class="Subtitulos Importante">Movimientos Especiales</h2>
+        <p>Una vez hemos visto como se mueven cada una de las piezas, debemos aprender los movimientos especiales (legales)
+        que se pueden hacer en una partida de ajedrez. Una vez más coloco una tabla donde se explican cada uno de
+        los movimientos especiales (Youtube).
+        </p>
+        <table>
+            <thead>
+                <tr>
+                    <th>MovimientosEspeciales</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="https://www.youtube.com/watch?v=zPCeHLFUH28" target="blank">El Enroque</a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.youtube.com/watch?v=ppYkD-KB9NE" target="blank">La Coronación</a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.youtube.com/watch?v=__z048_tAk0" target="blank">La Captura al Paso</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <br>
+    <section id="Seis">
+    <h2 id="Conceptos" class="Subtitulos Importante"> Conceptos basicos del ajedrez </h2>
+    <p>Después de haber visto el movimiento de las piezas, vamos a ver algunos conceptos basicos del ajedrez que nos ayudaran
+    a jugar la partida de ajedrez de la mejor manera.</p>
+    <section id="cartas">
+    <div class="card" style="width: 18rem;">
+        <span class="border border-dark">
+        <img src="https://i.ytimg.com/vi/RnIgD7knKn8/maxresdefault.jpg" class="card-img-top" alt="El lenguaje del ajedrez">
+        <div class="card-body">
+          <h5 class="card-title">El lenguaje del ajedrez</h5>
+          <p class="card-text">En esta lección de <a href="https://www.chess.com/" target="blank">Chess.com</a> aprenderemos sobre el lenguaje del ajedrez,
+        el conocer este lenguaje nos permitira ¡leer y escribir las partidas de ajedrez!</p>
+          <a href="https://www.youtube.com/watch?v=RnIgD7knKn8&list=PLr6H6zwk9SGK8SsbYi1ExWXO2A_2yiORR" target="blank" class="btn btn-primary">Ir al video</a>
+        </span>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <span class="border border-dark">
+        <img src="https://i.ytimg.com/vi/kY4Vok6UDM4/maxresdefault.jpg" class="card-img-top" alt="El lenguaje del ajedrez">
+        <div class="card-body">
+          <h5 class="card-title">Mover y capturar</h5>
+          <p class="card-text">En esta lección de <a href="https://www.chess.com/" target="blank">Chess.com</a> aprenderemos sobre el tema de mover y capturar.</p>
+
+          <a href="https://www.youtube.com/watch?v=kY4Vok6UDM4&list=PLr6H6zwk9SGK8SsbYi1ExWXO2A_2yiORR&index=2" target="blank" class="btn btn-primary">Ir al video</a>
+        </span>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <span class="border border-dark">
+      <img src="https://i.ytimg.com/vi/_aZr1uS2aOg/maxresdefault.jpg" class="card-img-top" alt="El lenguaje del ajedrez">
+      <div class="card-body">
+        <h5 class="card-title">El jaque</h5>
+        <p class="card-text">En esta lección de <a href="https://www.chess.com/" target="blank">Chess.com</a> aprenderemos sobre el importante concepto de "el jaque".</p>
+        <a href= "https://www.youtube.com/watch?v=_aZr1uS2aOg&list=PLr6H6zwk9SGK8SsbYi1ExWXO2A_2yiORR&index=3" target="blank" class="btn btn-primary">Ir al video</a>
+      </span>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <span class="border border-dark">
+        <img src="https://i.ytimg.com/vi/vXpgLZT2HR0/maxresdefault.jpg" class="card-img-top" alt="El lenguaje del ajedrez">
+        <div class="card-body">
+          <h5 class="card-title">Salir del jaque</h5>
+          <p class="card-text">En esta lección de <a href="https://www.chess.com/" target="blank">Chess.com</a> aprenderemos sobre el como salir de un jaque.</p>
+          <a href= "https://www.youtube.com/watch?v=vXpgLZT2HR0&list=PLr6H6zwk9SGK8SsbYi1ExWXO2A_2yiORR&index=4" target="blank" class="btn btn-primary">Ir al video</a>
+        </span>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+            <span class="border border-dark">
+            <img src="https://i.ytimg.com/vi/Cc01YwVHE6A/mqdefault.jpg" class="card-img-top" alt="El lenguaje del ajedrez">
+            <div class="card-body">
+              <h5 class="card-title">El jaque mate</h5>
+              <p class="card-text">En esta lección de <a href="https://www.chess.com/" target="blank">Chess.com</a> aprenderemos sobre que es el "jaque mate".</p>
+              <a href= "https://www.youtube.com/watch?v=Cc01YwVHE6A&list=PLr6H6zwk9SGK8SsbYi1ExWXO2A_2yiORR&index=5" target="blank" class="btn btn-primary">Ir al video</a>
+            </span>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <span class="border border-dark">
+        <img src="https://i.ytimg.com/vi/V4X5kPSk1UY/maxresdefault.jpg" class="card-img-top" alt="El lenguaje del ajedrez">
+        <div class="card-body">
+          <h5 class="card-title">El rey ahogado</h5>
+          <p class="card-text">En esta lección de <a href="https://www.chess.com/" target="blank">Chess.com</a> aprenderemos sobre el concepto de "rey ahogado".</p>
+          <a href= "https://www.youtube.com/watch?v=V4X5kPSk1UY&list=PLr6H6zwk9SGK8SsbYi1ExWXO2A_2yiORR&index=7" target="blank" class="btn btn-primary">Ir al video</a>
+        </span>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <span class="border border-dark">
+        <img src="https://i.ytimg.com/vi/bY2Q79taofc/maxresdefault.jpg" class="card-img-top" alt="El lenguaje del ajedrez">
+        <div class="card-body">
+          <h5 class="card-title">Tablas</h5>
+          <p class="card-text">El ultimo concepto que veremos de <a href="https://www.chess.com/" target="blank">Chess.com</a> sera sobre las tablas (empate).</p>
+          <a href= "https://www.youtube.com/watch?v=bY2Q79taofc&list=PLr6H6zwk9SGK8SsbYi1ExWXO2A_2yiORR&index=8" target="blank" class="btn btn-primary">Ir al video</a>
+        </span>
+        </div>
+    </section>  
+    </section>
+    <section id="Siete">
+        <h2 id="Reglasdelajedrez" class="Subtitulos Importante">Reglas del Ajedrez</h2>
+        <p>Para finalizar veremos las reglas oficiales del ajedrez que nos serviran como repaso para jugar al ajedrez de forma correcta.
+        </p>
+        <ul>
+            <li>
+                La partida de ajedrez se juega entre dos adversarios que mueven alternativamente sus
+                propias piezas sobre un tablero cuadrado, llamado “tablero de ajedrez”.
+            </li>
+            <li>
+                El jugador con las piezas claras (el Blanco) realiza el primer movimiento, y posteriormente
+                los jugadores mueven alternativamente, con lo que el jugador con las piezas oscuras (el
+                Negro) realiza el siguiente movimiento. 
+            </li>
+            <li>
+                Se dice que un jugador “está en juego” cuando se ha realizado el movimiento de su
+                adversario.
+            </li>
+            <li>
+                El objetivo de cada jugador es situar al rey de su adversario “bajo ataque”, de tal forma que
+                el adversario no disponga de ningún movimiento legal.
+                <ul>
+                    <li>
+                        Del jugador que alcanza este objetivo se dice que ha dado “mate” al rey de su
+                        adversario y que ha ganado la partida. No está permitido dejar el propio rey bajo
+                        ataque, ni exponerlo al ataque ni capturar el rey del oponente. 
+                    </li>
+                    <li>
+                        El adversario, cuyo rey ha recibido mate, pierde la partida.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Si la posición es tal que ninguno de los jugadores puede dar mate, la partida es tablas.
+            </li>
+            <li>
+                El tablero de ajedrez es un cuadrado dividido en 64 casillas cuadradas del mismo tamaño,
+                con distribución 8 x 8, alternativamente claras (las casillas “blancas”) y oscuras (las casillas
+                “negras”).
+                El tablero se coloca entre los jugadores de tal forma que la casilla de la esquina derecha más
+                cercana a cada jugador sea blanca.
+            </li>
+            <li>
+                Al comienzo de la partida, el Blanco dispone de 16 piezas de color claro (las piezas
+                “blancas”); el Negro tiene 16 piezas de color oscuro (las piezas “negras”).
+            </li>
+            <li>
+                La posición inicial de las piezas deben ir segun fue especificado en el capitulo de como jugar al ajedrez <a href="#Posicioninicialdelaspiezas">capitulo donde se muestra la posición inicial.</a>
+            </li>
+            <li>
+                Las ocho hileras verticales de casillas se denominan “columnas”. Las ocho hileras
+                horizontales de casillas se denominan “filas”. Una sucesión de casillas del mismo color en
+                línea recta que va desde un borde del tablero hasta otro adyacente, se denomina “diagonal”.
+            </li>
+            <li>
+                No está permitido mover una pieza a una casilla ocupada por una pieza del mismo color.
+            </li>
+            <li>
+                Si una pieza se mueve a una casilla ocupada por una pieza de su adversario, esta es
+                capturada y retirada del tablero como parte del mismo movimiento. 
+            </li>
+            <li>
+                Se debe mover las piezas segun lo especificado en capitulos anteriores, sino se hace asi sera considerado un
+                movimiento ilegal. Los movimientos especiales también deben seguir sus reglas.
+            </li>
+            <li>
+                Se dice que el rey está “en jaque” si está atacado por una o más piezas del
+                adversario, incluso aunque dichas piezas no pudieran ser movidas a la casilla
+                ocupada por el rey porque dejarían o situarían a su propio rey en jaque.
+            </li>
+            <li>
+                Ninguna pieza puede ser movida de forma que ponga o deje a su propio rey en
+                jaque.
+            </li>
+            <li>
+                Cada movimiento debe ser jugado con una sola mano.
+            </li>
+            <li>
+                <span class="Rojo Importante">Un movimiento es legal cuando se han cumplido todos los requisitos pertinentes
+                mencionados anteriormente.</span>
+            </li>
+            <li>
+                <span class="Rojo Importante">Un movimiento es ilegal cuando no cumpla con los requisitos pertinentes
+                mencionados anteriormente. La repeticion de movimientos ilegales puede ser motivo para perder la partida de ajedrez.</span>
+            </li>
+        <p class="Importante">Información sacada de: <a href="https://feda.org/feda2k16/wp-content/uploads/Leyes-2017.pdf">https://feda.org/feda2k16/wp-content/uploads/Leyes-2017.pdf</a></p>
+    </section>
+</body>
+</html>
